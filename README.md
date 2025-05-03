@@ -105,10 +105,6 @@ http://localhost:28852
 ## Preview
 ### Login
 ![img.png](img/img.png)
-### Public chat
-![img.png](img2/img.png)
-### Other user login
-![img.png](img.png)
 ### Message to public chat
 ![img_1.png](img/img_1.png)
 ### User receives notification
