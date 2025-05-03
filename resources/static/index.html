@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--LogIn-->
+<div id="logIn">
+    <input id="input-username" placeholder="Enter username...">
+    <button id="send-username-btn">Send</button>
+</div>
+<!--Users-->
+<div id="users" class="hidden">
+    <button id="public-chat-btn">Public chat</button>
+</div>
+<!--Messages-->
+<div id="messages" class="hidden">
+    <div id="chat-with" class="hidden">Public chat</div>
+</div>
+<!--SentContainer-->
+<div id="sent-container" class="hidden">
+    <input class="hidden" wrap="soft" autocomplete="off" id="input-msg" placeholder="Send message"></input>
+    <button class="hidden" type="button" id="send-msg-btn">Yea</button>
+</div>
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

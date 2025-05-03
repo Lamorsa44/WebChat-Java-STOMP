@@ -1,0 +1,192 @@
+html, button, input{
+    font-family: monospace;
+    font-size: x-large;
+}
+
+body {
+    position: relative;
+    display: flex;
+    /*border: 1px solid blue;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-flow: row-reverse;
+}
+
+#messages {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 95vh;
+    width: 70%;
+    /*padding: 2ch;*/
+    order: -1;
+    overflow-y: auto;
+    /*transition: all ease-in-out .35s;*/
+}
+
+#chat-with {
+    position: sticky;
+    top: 0;
+    border: 1px solid yellow;
+    background-color: hsl(58deg 100% 15% / 85%);
+    padding: 1ch;
+    border-radius: 2ch;
+    text-align: center;
+}
+
+#logIn {
+    display: flex;
+    position: fixed;
+    justify-self: center;
+    width: 80%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+}
+
+/*Class ?*/
+#meta {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#users {
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    height: 95vh;
+    overflow-y: auto;
+}
+
+#public-chat-btn {
+    width: inherit;
+    height: auto;
+    min-height: fit-content;
+    border: 1px solid orange;
+    border-radius: 2ch;
+    padding: 1ch;
+    text-align: center;
+    position: fixed;
+    /*top: 90%;*/
+    bottom: 10vh; /* Position from bottom instead of top */
+    left: 0; /* Align to the left side */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.user {
+    border: 1px solid magenta;
+    border-radius: 2ch;
+    padding: 1ch;
+    margin: 1ch;
+    width: 100%;
+}
+
+.user-container {
+    display: flex;
+    position: relative;
+}
+
+.new-message-counter {
+    right: 1ch;
+    border: 1px solid blue;
+    padding: 1ch;
+    border-radius: 2ch;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 20%;
+    align-self: center;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1ch 0;
+    width: 100%;
+    /*border: 1px solid gold;*/
+}
+
+.sender {
+    display: flex;
+    font-weight: bold;
+    width: 70%;
+    min-width: fit-content;
+    border: 1px solid #f702b4;
+    padding: 1ch;
+    border-radius: 2ch;
+    margin: 0 1ch;
+}
+
+.date {
+    width: 30%;
+    display: flex;
+    color: #666;
+    border: 1px solid #0000ff;
+    justify-content: end;
+    padding: 1ch 2em 1ch 1ch;
+    border-radius: 2ch;
+    margin: 0 1ch;
+}
+
+.message {
+    /*position: inherit;*/
+    display: flex;
+    overflow-wrap: anywhere;
+    padding: 1ch;
+    border: 1px solid #00ffd6;
+    border-radius: 2ch;
+    margin: 1ch;
+    transition: all ease-in-out .35s;
+}
+
+.message:hover {
+    background-color: rgba(255,95,198,0.31);
+}
+
+#sent-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    justify-items: stretch;
+    min-height: 5%;
+    width: 100%;
+    order: 1;
+    bottom: 0;
+}
+
+input {
+    border: 1px solid gold;
+    justify-items: auto;
+    width: 100%;
+    padding: 1ch;
+}
+
+button {
+    border: 2px solid #d000ff ;
+    justify-self: end;
+    min-width: fit-content;
+    width: 20%;
+    min-height: 100%;
+    margin: 0;
+    padding: 1ch;
+    background: rgba(0, 255, 255, 0.25);
+    transition: all ease-in-out .35s;
+}
+
+button:hover {
+    /*transition: all ease-in-out .35s;*/
+    color: #d31c84;
+    background: rgba(3, 79, 79, 0.55);
+}
+
+button:active {
+    transition: border 0s;
+    border: 2px solid #b90279;
+}
